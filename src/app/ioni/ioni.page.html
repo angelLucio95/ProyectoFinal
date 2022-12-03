@@ -3,21 +3,31 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>Inicio</ion-title>
+    <ion-title color="warning">Inicio</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-card>
 
-  <ion-card *ngIf="entradaActual">
-    <ion-card-content>
-      <p id="fechaTexto">{{entradaActual.fechaTexto}}</p>
-      <ion-textarea rows="15" [(ngModel)] = "entradaActual.texto">
+    <ion-card-header>
+      <img alt="Silhouette of mountains" src="../../assets/img/uta.png" width="350" height="250"/>
+      <ion-card-title>INICIO - PROJECTO FINAL</ion-card-title>
+      <br>
+      <ion-card-subtitle>Pagina Oficial De TIADSM7D</ion-card-subtitle>
+      <br>
+      <ion-card-title>Equipo Backend</ion-card-title>
+      <ion-card-subtitle>Lider: Angel Ignacio Lucio Rincon</ion-card-subtitle>
+      <ion-card-subtitle>Diego Jair Perez Romero</ion-card-subtitle>
+      <ion-card-subtitle>Silvia Paola Banda De Lira</ion-card-subtitle>
+      <ion-card-subtitle>Ximena</ion-card-subtitle>
+      <br>
+      <ion-card-title>Equipo Frontend</ion-card-title>
+      <ion-card-subtitle>Lider: Hugo Misael Diaz Lopez</ion-card-subtitle>
+      <ion-card-subtitle>Cristian Guadalupe Reyes Contreras</ion-card-subtitle>
+      <ion-card-subtitle>Chaltel </ion-card-subtitle>
+      <ion-card-subtitle>Carlos Eduardo Martinez</ion-card-subtitle>
 
-      </ion-textarea>
-    </ion-card-content>
-    <ion-button expand="block" color="success" (click)="guardar(entradaActual)">
-      Guardar
-    </ion-button>
+    </ion-card-header>
   </ion-card>
 </ion-content>
