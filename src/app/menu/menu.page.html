@@ -1,0 +1,30 @@
+<ion-split-pane contentId="main">
+  <ion-menu side="start" menuId="first" contentId="main">
+    <ion-header>
+      <ion-toolbar color="warning" class="centrado">
+        <img class="bar-calm" style="height:100px" alt="Silhouette of mountains" src="../../assets/img/icuatro.jpg" />
+
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+
+      <ion-list>
+        <ion-menu-toggle auto-hide="false" *ngFor="let pagina of paginas; let i = index">
+          <ion-item (click)="cambiarIndiceSeleccionado(i)" routerDirection="root" [routerLink]="[pagina.url]"
+            lines="none" detail="false" [class.selected]="indiceSeleccionado === i">
+            <ion-icon slot="start" [name]="pagina.icono + '-outline'"></ion-icon>
+            <ion-label>{{pagina.titulo}}</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle auto-hide="false">
+          <ion-item (click)="salir()" routerDirection="root" lines="none" detail="false">
+            <ion-icon slot="start" [name]="'exit-outline'"></ion-icon>
+            <ion-label>Salir</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <ion-router-outlet id="main" main></ion-router-outlet>
+</ion-split-pane>

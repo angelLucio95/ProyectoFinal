@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-title class="centrado">LOGIN</ion-title>
+  </ion-toolbar>
+</ion-header>
+<br>
+<br>
+<br>
+<br>
+<br>
+<ion-content>
+  <ion-card>
+    <div class="centrado">
+      <ion-card>
+        <img class="bar-calm" style="height:100px" alt="Silhouette of mountains" src="../../assets/img/icuatro.jpg" />
+        <br>
+        <br>
+        <ion-card-title class="centrado">Login</ion-card-title>
+      </ion-card>
+
+    </div>
+
+
+    <ion-card-content>
+      <form [formGroup]="formulariLogin">
+        <ion-item>
+          <ion-label class="centrado" position="floating">Usuario</ion-label>
+          <ion-input class="centrado" formControlName="nombre"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label class="centrado" position="floating">Contraseña</ion-label>
+          <ion-input class="centrado" formControlName="password" type="password"></ion-input>
+        </ion-item>
+      </form>
+      <br>
+      <ion-button color="success" expand="block" (click)="ingresar()">
+        Ingresar
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+  <div class="centrado">
+    <ion-card>
+      <img class="bar-calm" style="height:300px" alt="Silhouette of mountains" src="../../assets/img/industr.jpg" />
+
+    </ion-card>
+
+  </div>
+
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="success">
+    <ion-buttons slot="end">
+      <ion-button [routerLink]="['/registro']">Registrarse</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

@@ -28,20 +28,20 @@
   --ion-color-tertiary-tint: #6370ff;
 
   /** success **/
-  --ion-color-success: #2dd36f;
+  --ion-color-success: #1353a5;
   --ion-color-success-rgb: 45, 211, 111;
   --ion-color-success-contrast: #ffffff;
   --ion-color-success-contrast-rgb: 255, 255, 255;
-  --ion-color-success-shade: #28ba62;
-  --ion-color-success-tint: #42d77d;
+  --ion-color-success-shade: #1353a5;
+  --ion-color-success-tint: #1353a5;
 
   /** warning **/
-  --ion-color-warning: #ffc409;
+  --ion-color-warning: #ffffff;
   --ion-color-warning-rgb: 255, 196, 9;
   --ion-color-warning-contrast: #000000;
   --ion-color-warning-contrast-rgb: 0, 0, 0;
-  --ion-color-warning-shade: #e0ac08;
-  --ion-color-warning-tint: #ffca22;
+  --ion-color-warning-shade: #ffffff;
+  --ion-color-warning-tint: #ffffff;
 
   /** danger **/
   --ion-color-danger: #eb445a;
@@ -104,19 +104,19 @@
     --ion-color-tertiary-shade: #5d58e0;
     --ion-color-tertiary-tint: #7974ff;
 
-    --ion-color-success: #2fdf75;
+    --ion-color-success: #1353a5;
     --ion-color-success-rgb: 47,223,117;
     --ion-color-success-contrast: #000000;
     --ion-color-success-contrast-rgb: 0,0,0;
-    --ion-color-success-shade: #29c467;
-    --ion-color-success-tint: #44e283;
+    --ion-color-success-shade: #1353a5;
+    --ion-color-success-tint: #1353a5;
 
-    --ion-color-warning: #ffd534;
+    --ion-color-warning: #ffffff;
     --ion-color-warning-rgb: 255,213,52;
     --ion-color-warning-contrast: #000000;
     --ion-color-warning-contrast-rgb: 0,0,0;
-    --ion-color-warning-shade: #e0bb2e;
-    --ion-color-warning-tint: #ffd948;
+    --ion-color-warning-shade: #ffffff;
+    --ion-color-warning-tint: #ffffff;
 
     --ion-color-danger: #ff4961;
     --ion-color-danger-rgb: 255,73,97;
@@ -151,6 +151,10 @@
    * iOS Dark Theme
    * -------------------------------------------
    */
+  .centrado{
+    text-align: center;
+  }
+
 
   .ios body {
     --ion-background-color: #000000;
@@ -231,6 +235,9 @@
 
     --ion-tab-bar-background: #1f1f1f;
 
-    --ion-card-background: #1e1e1e;
+    --ion-card-background: #1f1f1f;
   }
+
+
 }
+
