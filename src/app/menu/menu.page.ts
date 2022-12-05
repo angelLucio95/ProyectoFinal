@@ -16,11 +16,7 @@ export class MenuPage implements OnInit {
       url: '/menu/ioni',
       icono: 'home'
     },
-    {
-      titulo: 'Entradas',
-      url: '/menu/entradas',
-      icono: 'book'
-    },
+
     {
       titulo: 'Autor',
       url: '/menu/autor',
