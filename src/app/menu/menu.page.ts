@@ -17,16 +17,6 @@ export class MenuPage implements OnInit {
       icono: 'home'
     },
     {
-      titulo: 'Entradas',
-      url: '/menu/entradas',
-      icono: 'book'
-    },
-    {
-      titulo: 'Autor',
-      url: '/menu/autor',
-      icono: 'accessibility'
-    },
-    {
       titulo: 'Industria 4.0',
       url: '/menu/tem1',
       icono: 'battery-charging'

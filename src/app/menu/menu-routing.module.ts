@@ -7,17 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: MenuPage,
-    children:[{
-        path: 'entradas',
-        loadChildren: () => import('../entradas/entradas.module').then( m => m.EntradasPageModule)
-      },
+    children:[
       {
         path: 'ioni',
         loadChildren: () => import('../ioni/ioni.module').then( m => m.IoniPageModule)
-      },
-      {
-        path: 'autor',
-        loadChildren: () => import('../autor/autor.module').then( m => m.AutorPageModule)
       },
       {
         path: 'tem1',
