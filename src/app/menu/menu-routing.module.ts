@@ -13,10 +13,6 @@ const routes: Routes = [
         loadChildren: () => import('../ioni/ioni.module').then( m => m.IoniPageModule)
       },
       {
-        path: 'autor',
-        loadChildren: () => import('../autor/autor.module').then( m => m.AutorPageModule)
-      },
-      {
         path: 'tem1',
         loadChildren: () => import('../tem1/tem1.module').then( m => m.Tem1PageModule)
       },
