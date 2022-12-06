@@ -8,16 +8,96 @@
 </ion-header>
 <ion-content class="centrado">
   <img alt="Silhouette of mountains" src="../../assets/img/comandos.jpg" />
-    <ion-card-title>Desde que existe una gran variedad de comandos que puedes utilizar, dominar Git requiere tiempo. Pero algunos comandos se utilizan más frecuentemente. Por tanto, explicaré los 10 comandos de Git más usados que todo desarrollador debería de conocer.  </ion-card-title>
-    <p><strong>1. Git clone</strong></p>
-    <ion-card-content>Git clone es un comando para descargarte el código fuente existente desde un repositorio remoto (como Github, por ejemplo). En otras palabras, Git clone básicamente realiza una copia idéntica de la última versión de un proyecto en un repositorio y la guarda en tu ordenador.</ion-card-content>
-    <p><strong>2. Git branch</strong></p>
-    <p><strong>3. Git checkout</strong></p>
-    <p><strong>4. Git status</strong></p>
-    <p><strong>5. Git add</strong></p>
-    <p><strong>6. Git commit</strong></p>
-    <p><strong>7. Git push</strong></p>
-    <p><strong>8. Git pull</strong></p>
-    <p><strong>9. Git revert</strong></p>
-    <p><strong>10. Git merge</strong></p>
+  <ion-card-title>Desde que existe una gran variedad de comandos que puedes utilizar, dominar Git requiere tiempo. Pero algunos comandos se utilizan más frecuentemente. Por tanto, explicaré los 10 comandos de Git más usados que todo desarrollador debería de conocer.  </ion-card-title>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>1. Git clone</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      Git clone es un comando para descargarte el código fuente existente desde un repositorio remoto (como Github, por ejemplo). En otras palabras, Git clone básicamente realiza una copia idéntica de la última versión de un proyecto en un repositorio y la guarda en tu ordenador.
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>2. Git branch</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      Las ramas (branch) son altamente importantes en el mundo de Git. Usando ramas, varios desarrolladores pueden trabajar en paralelo en el mismo proyecto simultáneamente. Podemos usar el comando git branch para crearlas, listarlas y eliminarlas.
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>3. Git checkout</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      Este es también uno de los comandos más utilizados en Git. Para trabajar en una rama, primero tienes que cambiarte a ella. Usaremos git checkout principalmente para cambiarte de una rama a otra. También lo podemos usar para chequear archivos y commits.
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>4. Git status</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      El comando de git status nos da toda la información necesaria sobre la rama actual.
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>5. Git add</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      Cuando creamos, modificamos o eliminamos un archivo, estos cambios suceden en local y no se incluirán en el siguiente commit (a menos que cambiemos la configuración).
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>6. Git commit</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      Este sea quizás el comando más utilizado de Git. Una vez que se llega a cierto punto en el desarrollo, queremos guardar nuestros cambios (quizás después de una tarea o asunto específico).
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>7. Git push</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      Después de haber confirmado tus cambios, el siguiente paso que quieres dar es enviar tus cambios al servidor remoto. Git push envía tus commits al repositorio remoto.
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>8. Git pull</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      El comando git pull se utiliza para recibir actualizaciones del repositorio remoto. Este comando es una combinación del git fetch y del git merge lo cual significa que cundo usemos el git pull recogeremos actualizaciones del repositorio remoto (git fetch) e inmediatamente aplicamos estos últimos cambios en local (git merge).
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>9. Git revert</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      A veces, necesitaremos deshacer los cambios que hemos hecho. Hay varias maneras para deshacer nuestros cambios en local y/o en remoto (dependiendo de lo que necesitemos), pero necesitaremos utilizar cuidadosamente estos comandos para evitar borrados no deseados.
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>10. Git merge</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      Git merge básicamente integra las características de tu rama con todos los commits realizados a las ramas dev (o master).  Es importante que recuerdes que tienes que estar en esa rama específica que quieres fusionar  con tu rama de características.
+    </ion-card-content>
+  </ion-card>
 </ion-content>
+
